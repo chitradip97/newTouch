@@ -1,0 +1,100 @@
+export const properties = [
+  {
+    id: "golden-resilience-1",
+    slug: "golden-resilience-london-1",
+    title: "Golden Resilience London USA",
+    location: "Making Beach",
+    price: 533367,
+    beds: 4,
+    baths: 3,
+    area: 2400,
+    image: "/images/properties/property-1.jpg",
+    type: "Villa",
+  },
+  {
+    id: "golden-resilience-2",
+    slug: "golden-resilience-london-2",
+    title: "Golden Resilience London USA",
+    location: "Making Beach",
+    price: 533367,
+    beds: 4,
+    baths: 3,
+    area: 2400,
+    image: "/images/properties/property-2.jpg",
+    type: "Villa",
+  },
+  {
+    id: "golden-resilience-3",
+    slug: "golden-resilience-london-3",
+    title: "Golden Resilience London USA",
+    location: "Making Beach",
+    price: 533367,
+    beds: 4,
+    baths: 3,
+    area: 2400,
+    image: "/images/properties/property-3.jpg",
+    type: "Villa",
+  },
+  {
+    id: "golden-resilience-4",
+    slug: "golden-resilience-london-4",
+    title: "Golden Resilience London USA",
+    location: "Making Beach",
+    price: 533367,
+    beds: 4,
+    baths: 3,
+    area: 2400,
+    image: "/images/properties/property-4.jpg",
+    type: "Villa",
+  },
+  {
+    id: "golden-resilience-5",
+    slug: "golden-resilience-london-5",
+    title: "Golden Resilience London USA",
+    location: "Making Beach",
+    price: 533367,
+    beds: 4,
+    baths: 3,
+    area: 2400,
+    image: "/images/properties/property-5.jpg",
+    type: "Villa",
+  },
+  {
+    id: "golden-resilience-6",
+    slug: "golden-resilience-london-6",
+    title: "Golden Resilience London USA",
+    location: "Making Beach",
+    price: 533367,
+    beds: 4,
+    baths: 3,
+    area: 2400,
+    image: "/images/properties/property-6.jpg",
+    type: "Villa",
+  },
+];
+
+export const featuredProperties = [
+  {
+    id: "featured-1",
+    title: "Price start at $234k",
+    image: "/images/properties/featured-1.jpg",
+  },
+  {
+    id: "featured-2",
+    title: "Price start at $234k",
+    image: "/images/properties/featured-2.jpg",
+  },
+  {
+    id: "featured-3",
+    title: "Price start at $234k",
+    image: "/images/properties/featured-3.jpg",
+  },
+];
+
+export function formatPrice(value) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(value);
+}
