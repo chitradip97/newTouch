@@ -41,7 +41,7 @@ export default async function PropertyDetailPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-20">
+    <div className="min-h-screen bg-white pt-10">
       <div className="container-custom py-6">
         {/* Back Button */}
         <Link

@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function PropertiesPage() {
   return (
-    <div className="bg-white pt-24">
+    <div className="bg-white pt-10">
       <PropertyGrid
         properties={properties}
         heading="Explore Available Houses Near Your Location"
