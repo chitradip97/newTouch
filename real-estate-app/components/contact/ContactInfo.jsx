@@ -99,19 +99,19 @@ export default function ContactInfo() {
             }}
             className="group w-full text-left"
           >
-            <div className="flex items-start gap-4 rounded-lg p-4 transition-all hover:bg-neutral-50">
-              <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+            <div className="flex items-start gap-3 rounded-lg p-4 transition-all hover:bg-neutral-50 sm:gap-4">
+              <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all">
                 <Icon className="h-5 w-5" aria-hidden="true" />
               </div>
-              <div className="flex-1">
+              <div className="min-w-0 flex-1">
                 <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wide">
                   {method.label}
                 </p>
-                <p className="mt-1 text-lg font-semibold text-neutral-900">
+                <p className="mt-1 max-w-full break-words text-base font-semibold leading-snug text-neutral-900 sm:text-lg">
                   {method.value}
                 </p>
               </div>
-              <div className="mt-1 flex h-5 w-5 items-center justify-center">
+              <div className="mt-1 flex min-w-10 shrink-0 items-center justify-end">
                 {isCopied ? (
                   <Check className="h-5 w-5 text-green-600" aria-hidden="true" />
                 ) : (
